@@ -9,8 +9,28 @@
     tools:context=".MainMenu" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/textView1" 
+        android:background = "@drawable/BackGround">
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/relativeLayout1"
+        android:layout_marginLeft="54dp"
+        android:layout_toRightOf="@+id/relativeLayout1"
+        android:src="@android:drawable/btn_star" />
 
 </RelativeLayout>
